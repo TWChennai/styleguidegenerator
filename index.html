@@ -1,0 +1,289 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header></header>
+<body>
+	<div class="container">
+		<div class="column">
+			<div class="elements">
+				<div class="title">Configurations</div>
+				<div class="configurations clearfloat">
+					<div class="accordion">
+						<div class="accordion-element">
+							<div class="accordion-header">Primary Colors</div>
+							<div class="accordion-content">
+								<div class="primaryColors">
+								</div>
+								<button class="btnColorAdd" data-target=".primaryColors" data-childclass="PrimaryColor">Add Color</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Secondary Colors</div>
+							<div class="accordion-content">
+								<div class="secondaryColors">
+								</div>
+								<button  class="btnColorAdd" data-target=".secondaryColors" data-childclass="SecondaryColor">Add Color</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Links</div>
+							<div class="accordion-content">
+								<div class="linkDetails">
+								</div>
+								<button class="textAddLink" data-target=".linkDetails" data-childclass="Links" data-element="a">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Buttons</div>
+							<div class="accordion-content">
+								<div class="buttonDetails">
+								</div>
+								<button class="textAddLink" data-target=".buttonDetails" data-childclass="Button" data-element="button">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Heading 1(H1)</div>
+							<div class="accordion-content">
+								<div class="h1Details">
+								</div>
+								<button class="textAddLink" data-target=".h1Details" data-childclass="H1" data-element="h1">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Heading 2(H2)</div>
+							<div class="accordion-content">
+								<div class="h2Details">
+								</div>
+								<button class="textAddLink" data-target=".h2Details" data-childclass="H2" data-element="h2">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Heading 3(H3)</div>
+							<div class="accordion-content">
+								<div class="h3Details">
+								</div>
+								<button class="textAddLink" data-target=".h3Details" data-childclass="H3" data-element="h3">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Heading 4(H4)</div>
+							<div class="accordion-content">
+								<div class="h4Details">
+								</div>
+								<button class="textAddLink" data-target=".h4Details" data-childclass="H4" data-element="h4">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Heading 5(H5)</div>
+							<div class="accordion-content">
+								<div class="h5Details">
+								</div>
+								<button class="textAddLink" data-target=".h5Details" data-childclass="H5" data-element="h5">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Heading 6(H6)</div>
+							<div class="accordion-content">
+								<div class="h6Details">
+								</div>
+								<button class="textAddLink" data-target=".h6Details" data-childclass="H6" data-element="h6">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Paragraph (p)</div>
+							<div class="accordion-content">
+								<div class="paragraphDetails">
+								</div>
+								<button class="textAddLink" data-target=".paragraphDetails" data-childclass="p" data-element="p">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Other Text</div>
+							<div class="accordion-content">
+								<div class="otherTextDetails">
+								</div>
+								<button class="textAddLink" data-target=".otherTextDetails" data-childclass="OtherText" data-element="">Add</button>
+							</div>
+						</div>
+						<div class="accordion-element">
+							<div class="accordion-header">Badges</div>
+							<div class="accordion-content">
+								<div class="badgesDetails">
+								</div>
+								<button class="textAddLink" data-target=".badgesDetails" data-childclass="Badges" data-element="">Add</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="css"><div class="title">CSS</div>
+				<div class="clearfloat"></div>
+				<div class="csscontainer">
+				</div>			
+			</div>
+			<div class="preview">
+				<div class="title">Preview</div>
+				<div class="clearfloat"></div>
+				<div class="previewcontainer"></div>
+			</div>
+		</div>
+	</div>
+	<div class="templates">
+		<div class="color-template">
+			<input type="color" class="colorSwatch" />
+			<label>BG Class Name</label> <input type="text" class="txtbgColorClass" />
+			<label>Text Class Name</label> <input type="text" class="txtColorClass" />
+			<button class="btnSaveColor">Save</button>
+			<button class="btnRemoveColor">Remove</button>
+			<hr>
+		</div>
+		<div class="text-template" >
+			<input type="hidden" class="hidElement"/>
+			<label>Class Name :</label>
+			<input type="text" class="txtFontClass"><br/>
+			<span style="font-size:9px;">* - class name will be appended to the element</span>
+			<br/>
+			<label>Hover state :</label>
+			<input type="checkbox" class="chkFontHover"><br/>
+			<input type ="checkbox" title="check if BG color is needed" class="chkbgcolor"/>
+			<label>Background Color</label>
+			<input type="color" class="bgcolorSwatch" />
+			<br/>
+			<input type ="checkbox" title="check if font color is needed" class="chkcolor"/> 
+			<label>Color</label>
+			<input type="color" class="colorSwatch" />
+			<br/>
+			<label>Border</label> <input type="text" class="txtBorder" />
+			<br/>
+			<label>Border Radius</label> <input type="text" class="txtBorderRadius" />
+			<br/>
+			<label>Padding</label> <input type="text" class="txtPadding" />
+			<br/>
+			<label>Font Family</label> <input type="text" class="txtFontFamily" />
+			<br/>
+			<label>Font Size</label> <input type="text" class="txtFontSize" />
+			<br/>
+			<label>Font Weight</label> <input type="text" class="txtFontWeight" />
+			<br/>
+			<label>Font Style</label>
+			<select class="sltFontStyle">
+				<option></option>
+				<option>inherit</option>
+				<option>normal</option>
+				<option>italic</option>
+				<option>initial</option>
+				<option>obilique</option>
+			</select>
+			<br/>
+			<label>Text Decoration</label>
+			<select class="sltTextDecoration">
+				<option></option>
+				<option>inherit</option>
+				<option>blink</option>
+				<option>initial</option>
+				<option>line-through</option>
+				<option>overline</option>
+				<option>underline</option>
+			</select>
+			<br/>
+			<label>Text Alignment</label>
+			<select class="sltTextAlignment">
+				<option></option>
+				<option>inherit</option>
+				<option>left</option>
+				<option>right</option>
+				<option>center</option>
+				<option>justify</option>
+				<option>initial</option>
+			</select>
+			<br/>
+			<label>Text Transformation</label>
+			<select class="sltTextTransformation">
+				<option></option>
+				<option>none</option>
+				<option>capitalize</option>
+				<option>uppercase</option>
+				<option>lowercase</option>
+				<option>initial</option>
+				<option>inherit</option>
+			</select>
+			<br/>
+			<button class="btnSaveText">Save</button>
+			<button class="btnRemoveText">Remove</button>
+			<hr/>
+		</div>
+		<script type="text/template" id="colorcss-template">
+			<% 
+				_.each(arr, function(colorItem){ %>
+					<% if(colorItem.bgclassname){ %>
+					.<%- colorItem.bgclassname %> {background-color: <%- colorItem.colorCode%>;}
+					<%}%>
+					<% if(colorItem.txtclassname){ %>
+					.<%- colorItem.txtclassname %> {color: <%- colorItem.colorCode%>;}
+					<%}%>
+					<br/>
+				<%})
+			%>
+		</script>
+		<script type="text/template" id="fontcss-template">
+			<% 
+				_.each(arr, function(fontItem){ %>
+					<% if (fontItem.hover) {%>
+						<%- fontItem.element %>:hover{
+					<% } else{%>
+						<%- fontItem.element %>{
+					<% }%>
+						<% if(fontItem.bgColor){ %>
+							background-color: <%- fontItem.bgColor%>;
+						<%}%>
+						<% if(fontItem.fontColor){ %>
+							color: <%- fontItem.fontColor%>;
+						<%}%>
+						<% if(fontItem.fontFamily){ %>
+							font-family: <%- fontItem.fontFamily%>;
+						<%}%>
+						<% if(fontItem.fontSize){ %>
+							font-size: <%- fontItem.fontSize%>;
+						<%}%>
+						<% if(fontItem.fontWeight){ %>
+							font-weight: <%- fontItem.fontWeight%>;
+						<%}%>
+						<% if(fontItem.fontStyle){ %>
+							font-style: <%- fontItem.fontStyle%>;
+						<%}%>
+						<% if(fontItem.textDecoration){ %>
+							text-decoration: <%- fontItem.textDecoration%>;
+						<%}%>
+						<% if(fontItem.textAlignment){ %>
+							text-align: <%- fontItem.textAlignment%>;
+						<%}%>
+						<% if(fontItem.textTransform){ %>
+							text-transform: <%- fontItem.textTransform%>;
+						<%}%>
+						<% if(fontItem.border){ %>
+							border: <%- fontItem.border%>;
+						<%}%>
+						<% if(fontItem.borderRadius){ %>
+							border-radius: <%- fontItem.borderRadius%>;
+						<%}%>
+						<% if(fontItem.padding){ %>
+							padding: <%- fontItem.padding%>;
+						<%}%>
+						<% if(fontItem.isBadge){ %>
+							display: inline-block;
+						<%}%>
+					}
+					<br/>
+				<%})
+			%>
+		</script>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
