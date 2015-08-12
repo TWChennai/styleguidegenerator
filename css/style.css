@@ -22,7 +22,7 @@ header{
 	font-size: 13px;
 	vertical-align: top;
 }
-.css, .preview, .elements{
+.css, .preview, .elements, .variables{
     overflow-y: auto;
     box-shadow: 1px 1px 1px #CCC;
     margin-bottom: 10px;
@@ -30,9 +30,6 @@ header{
     vertical-align: top;
     height: 44%;
     overflow-y: scroll;
-}
-.elements{
-	height: 90%;
 }
 .title{
 	background-color: #DADADA;
@@ -75,10 +72,10 @@ header{
 	width:50%;
 	display: inline-block;
 }
-.textDetails label, .textDetails input, .textDetails select, .textDetails button{
+.configDetails label, .configDetails input, .configDetails select, .configDetails button{
 	margin-top: 5px;
 }
-.textDetails label{
+.configDetails label{
 	width: 50%;
 	display: inline-block;
 }

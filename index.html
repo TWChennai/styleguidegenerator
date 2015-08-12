@@ -7,6 +7,14 @@
 <body>
 	<div class="container">
 		<div class="column">
+			<div class="variables"><div class="title">Variables</div>
+				<div class="variablecontainer clearfloat">
+					<div class="variablelist">
+					</div>
+					<button class="btnVariableAdd" data-target=".variablelist" data-childclass="variablelist">Add</button>
+
+				</div>			
+			</div>
 			<div class="elements">
 				<div class="title">Configurations</div>
 				<div class="configurations clearfloat">
@@ -102,9 +110,9 @@
 						<div class="accordion-element">
 							<div class="accordion-header">Other Text</div>
 							<div class="accordion-content">
-								<div class="otherTextDetails">
+								<div class="otherconfigDetails">
 								</div>
-								<button class="textAddLink" data-target=".otherTextDetails" data-childclass="OtherText" data-element="">Add</button>
+								<button class="textAddLink" data-target=".otherconfigDetails" data-childclass="OtherText" data-element="">Add</button>
 							</div>
 						</div>
 						<div class="accordion-element">
@@ -120,23 +128,54 @@
 			</div>
 		</div>
 		<div class="column">
-			<div class="css"><div class="title">CSS</div>
-				<div class="clearfloat"></div>
-				<div class="csscontainer">
+			<div class="css"><div class="title">SASS</div>
+				<div class="saascontainer clearfloat">
+				</div>	
+				<div class="csscontainer clearfloat">
 				</div>			
 			</div>
 			<div class="preview">
 				<div class="title">Preview</div>
-				<div class="clearfloat"></div>
-				<div class="previewcontainer"></div>
+				<div class="previewcontainer clearfloat"></div>
 			</div>
 		</div>
 	</div>
 	<div class="templates">
+		<div class="variable-template">
+			<label>Type</label>
+			<select class="sltVariableType">
+				<option></option>
+				<option>color</option>
+				<option>Border Radius</option>
+				<option>Border Style</option>
+				<option>Border Size</option>
+				<option>Font Size</option>
+				<option>Line Height</option>
+				<option>Font Family</option>
+				<option>Font Weight</option>
+				<option>Font Style</option>
+				<option>Text Alignment</option>
+				<option>Text Transformation</option>
+				<option>Text Decoration</option>
+			</select>
+			<label>Name :</label>
+			<input type="text" class="txtVarName"/>
+			<div class="value" style="display:inline-block;">
+			<label>Value :</label>
+			<input type="text" class="txtValue"/>
+			<input type="color" class="colorValue"/>
+			</div>
+			<button class="btnSaveVar">Save</button>
+			<button class="btnRemoveVar">Remove</button>
+			<hr/>
+		</div>
 		<div class="color-template">
-			<input type="color" class="colorSwatch" />
-			<label>BG Class Name</label> <input type="text" class="txtbgColorClass" />
-			<label>Text Class Name</label> <input type="text" class="txtColorClass" />
+			<label>Variable Name</label>
+			<select class="colorSwatch">
+				<option></option>
+			</select><br/>
+			<label>BG Class Name</label> <input type="text" class="txtbgColorClass" /><br/>
+			<label>Text Class Name</label> <input type="text" class="txtColorClass" /><br/>
 			<button class="btnSaveColor">Save</button>
 			<button class="btnRemoveColor">Remove</button>
 			<hr>
@@ -151,71 +190,80 @@
 			<input type="checkbox" class="chkFontHover"><br/>
 			<input type ="checkbox" title="check if BG color is needed" class="chkbgcolor"/>
 			<label>Background Color</label>
-			<input type="color" class="bgcolorSwatch" />
+			<select class="bgcolorSwatch">
+				<option></option>
+			</select>
 			<br/>
 			<input type ="checkbox" title="check if font color is needed" class="chkcolor"/> 
 			<label>Color</label>
-			<input type="color" class="colorSwatch" />
+			<select class="colorSwatch">
+				<option></option>
+			</select>
 			<br/>
-			<label>Border</label> <input type="text" class="txtBorder" />
+			<label>Border Radius</label> 
+			<select class="txtBorderRadius">
+				<option></option>
+			</select>
 			<br/>
-			<label>Border Radius</label> <input type="text" class="txtBorderRadius" />
+			<label>Border Style</label> 
+			<select class="txtBorderStyle">
+				<option></option>
+			</select>
+			<br/>
+			<label>Border Size</label> 
+			<select class="txtBorderSize">
+				<option></option>
+			</select>
 			<br/>
 			<label>Padding</label> <input type="text" class="txtPadding" />
 			<br/>
-			<label>Font Family</label> <input type="text" class="txtFontFamily" />
+			<label>Line Height</label>
+			<select class="sltLineHeight">
+			</select>
 			<br/>
-			<label>Font Size</label> <input type="text" class="txtFontSize" />
+			<label>Font Family</label> 
+			<select class="txtFontFamily">
+				<option></option>
+			</select>
 			<br/>
-			<label>Font Weight</label> <input type="text" class="txtFontWeight" />
+			<label>Font Size</label> 
+			<select class="txtFontSize">
+				<option></option>
+			</select>
+			<br/>
+			<label>Font Weight</label> 
+			<select class="txtFontWeight">
+				<option></option>
+			</select>
 			<br/>
 			<label>Font Style</label>
 			<select class="sltFontStyle">
-				<option></option>
-				<option>inherit</option>
-				<option>normal</option>
-				<option>italic</option>
-				<option>initial</option>
-				<option>obilique</option>
 			</select>
 			<br/>
 			<label>Text Decoration</label>
 			<select class="sltTextDecoration">
-				<option></option>
-				<option>inherit</option>
-				<option>blink</option>
-				<option>initial</option>
-				<option>line-through</option>
-				<option>overline</option>
-				<option>underline</option>
 			</select>
 			<br/>
 			<label>Text Alignment</label>
 			<select class="sltTextAlignment">
-				<option></option>
-				<option>inherit</option>
-				<option>left</option>
-				<option>right</option>
-				<option>center</option>
-				<option>justify</option>
-				<option>initial</option>
 			</select>
 			<br/>
 			<label>Text Transformation</label>
 			<select class="sltTextTransformation">
-				<option></option>
-				<option>none</option>
-				<option>capitalize</option>
-				<option>uppercase</option>
-				<option>lowercase</option>
-				<option>initial</option>
-				<option>inherit</option>
 			</select>
 			<br/>
 			<button class="btnSaveText">Save</button>
 			<button class="btnRemoveText">Remove</button>
 			<hr/>
 		</div>
+		<script type="text/template" id="variablecss-template">
+			<% 
+				_.each(arr, function(varItem){ %>
+					<%- varItem.varName %> : <%- varItem.varValue %>; 
+					<br/>
+				<%})
+			%>
+		</script>
 		<script type="text/template" id="colorcss-template">
 			<% 
 				_.each(arr, function(colorItem){ %>
@@ -225,7 +273,7 @@
 					<% if(colorItem.txtclassname){ %>
 					.<%- colorItem.txtclassname %> {color: <%- colorItem.colorCode%>;}
 					<%}%>
-					<br/>
+					<br>
 				<%})
 			%>
 		</script>
@@ -276,8 +324,11 @@
 						<% if(fontItem.isBadge){ %>
 							display: inline-block;
 						<%}%>
+						<% if(fontItem.lineHeight){ %>
+							line-height: <%- fontItem.lineHeight%>;
+						<%}%>
 					}
-					<br/>
+					<br>
 				<%})
 			%>
 		</script>
